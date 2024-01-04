@@ -1,0 +1,10 @@
+img{
+    width: 150px;
+}
+article{
+    float: left;
+    width: 150px;
+    padding: 5px;
+    margin-left: 700px;
+    background-color: rgb(228, 235, 237);
+}

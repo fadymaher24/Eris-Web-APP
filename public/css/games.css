@@ -1,0 +1,35 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: auto;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  #section-head{
+    color: rgb(237, 240, 212);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 50px;
+    padding: 0px;
+  }
+  
+  .game{
+    width: 500px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+  .game img{
+    width: 500px;
+  }
+  #item-data{
+    color: white;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
+    margin-top: 10px;
+  
+  }
+ 
