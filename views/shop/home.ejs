@@ -1,0 +1,49 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/homestyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <%- include('../includes/navigation.ejs') %>
+    <%- include('../includes/side-menu.ejs') %>
+
+      <!-- ABOVE IS THE SIDE MENU -->
+      <div class="content">
+        <!-- This is the first block-->
+        <div id="block1">
+       
+        <h1>Upcoming<br>Game Studio</h1>
+        <p>"Innovative indie game studio based in Egypt, crafting captivating and immersive games with a unique creative approach."</p>
+      
+      </div>
+        <!-- This is the second block-->
+        <div  id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+          
+          <img class="image" src="https://www.androidauthority.com/wp-content/uploads/2023/01/Sky-Children-of-Light-best-Android-games.jpg" draggable="false">
+          <img class="image" src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/03/best-open-world-games-2022.jpg" draggable="false">
+          <img class="image" src="https://i.ytimg.com/vi/en3N3DeLsrY/maxresdefault.jpg" draggable="false">
+          <img class="image" src="https://cdn.mos.cms.futurecdn.net/84CvByk739yh2zzP6bZZm8.jpg" draggable="false">
+          <img class="image" src="https://i.ytimg.com/vi/N1Z7lAaBHWU/maxresdefault.jpg" draggable="false">
+          <img class="image" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/7141393_High%20Graphics%20PC%20Games%202021.jpg" draggable="false">
+          <img class="image" src="https://gameranx.com/wp-content/uploads/2021/01/ghost.jpg" draggable="false">
+          <img class="image" src="/zahi1.png" draggable="false">
+          
+        </div>
+        <!-- This is the third block-->
+        <div data-aos="flip-down" id="block2">
+          <h1>Mission and values</h1>
+          <p>"At our indie game studio, we're committed to creating unique and memorable experiences that push the boundaries of what's possible in gaming. Our team is made up of passionate developers who share a love of games and a dedication to excellence."</p>
+        </div>
+        <!-- This is the fourth block-->
+        <div data-aos="fade-right" id="block3">
+          <h1>Our Games</h1>
+          <p>"We are currently developing an action adventure game <br>"A'ARU The Serpent of Chaos"</p>
+        </div>
+      </div>
+      
+      <script src="js/homescripts.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+        </script>
+      <%- include('../includes/footer.ejs') %>
+      
+      
+    

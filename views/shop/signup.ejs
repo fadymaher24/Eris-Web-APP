@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="RegCheck.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Register.css">
+    <title>Eris studios | Register</title>
+</head>
+<body>
+    <header>
+        <nav class="header-content">
+            <img src="logo.jpg" alt="Eris" class="header-logo">
+            <h1 class="comp-name">Eris Studios</h1>
+            <ul>
+              <div id="navbar-links" style="margin-top: 4px">
+                <li class="header-link"><a id="header-link" href="Register">Register</li>
+                <li class="header-link"><a id="header-link" href="login">Sign in</li>
+                <li class="header-link"><a id="header-link" href="https://www.facebook.com/">Games</li>
+                <li class="header-link"><a id="header-link" href="https://www.facebook.com/">Shop</li>
+                <li class="header-link"><a id="header-link-contact">Contact</li>
+              </div>
+              <div>
+              <img src="menu.png" class="menu-icon" id="menu-icon" style="display: none;">
+            </div>
+            </ul>
+            </nav>
+        </header>
+
+    <!-- HERE'S THE SIDE MENU -->
+
+    <div class="side-menu">
+      <a href="https://www.facebook.com/" style="font-family: sans-serif; font-weight: bold;  font-size: larger; background-color: #ff00006b;">Sign-in</a>
+      <a href="https://www.facebook.com/">Games</a>
+      <a href="https://www.youtube.com/">Shop</a>
+      <a href="https://www.youtube.com/">Contact</a>
+    </div>
+
+    <!-- ABOVE IS THE SIDE MENU -->
+    <div class="content">
+        <section id="register">
+            <div class="form_box">
+                <div class="form_value">
+                    <form action="/sign_up" method="POST">
+                        <h2>Register</h2>
+
+                        <div class="input_box">
+    
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input placeholder="Username" name="username" type="text" class="input-text" id="username" required><br>
+                            <label class="label-helper" for="">Username</label><br>
+                        </div>
+
+                        <div class="input_box">
+    
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input placeholder="Email" name="email" type="email" class="input-text" id="email" required><br>
+                            <label class="label-helper" for="">Email</label><br>
+                        </div>
+                        <div class="input_box">
+                            
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input placeholder="Password" name="password" type="password" class="input-text" id="password" required><br>
+                            <label class="label-helper" for="">Password</label><br>
+                        </div>
+
+                        <div class="input_box">
+                            
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input placeholder="Phone" name="phone" type="tel" class="input-text" id="phone"><br>
+                            <label class="label-helper" for="">Phone number</label><br>
+                        </div>
+                        <div class="gender">
+                            <label for="">Gender</label><br>
+                            <ul id="list">
+                                <li><input placeholder="Gender" name="gender" type="radio" id="male" name="Gender" value="Male">  Male</li>
+                                <li><input placeholder="Gender" name="gender" type="radio" id="female" name="Gender" value="Female">  Female</li>
+                            </ul>
+                        </div>
+                        <div class="agreement">
+                            <label for=""><input type="checkbox" id="terms" required> I agree to all the terms & conditions</label>
+                            
+                        </div>
+                        <button type="submit" class="sub" onclick="checkdata()">Register</button>
+                        <div class="login">
+                            <p> Already have an account? <a href="login.html">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+    </div>
+    
+
+    <footer>
+      <a href="https://discord.gg/FDjuRHtZG8" target="_blank" style="text-decoration: none;">
+      <h3 id="dis-link">Join our discord server</h3>
+    </a>
+
+      <a href="https://discord.gg/FDjuRHtZG8" target="_blank">
+        <img src="discord.png" alt="discord" id="discordIMG">
+      </a>
+
+    </footer>
+
+</body>
+</html>

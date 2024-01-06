@@ -1,0 +1,69 @@
+<%- include('../includes/head.ejs') %>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/contact.css'>
+  </head>
+  <body>
+    <%- include('../includes/navigation.ejs') %>
+    <%- include('../includes/side-menu.ejs') %>
+
+       <!-- ABOVE IS THE SIDE MENU -->
+       <body>
+        <!-- ABOVE IS THE SIDE MENU -->
+        <section class="contact">
+         <div class="content">
+           <h2>Contact us</h2>
+           <p>Feel free to contact us for any questions or suggestions.</p>
+         </div>
+            <div class="container">
+              <div class="contactInfo">
+                 <div class="box">
+                 <div class="icon">
+                   <img src="location.png" alt="address" id="addressIMG">
+                 </div>
+                 <div class="text">
+                   <h3>Address</h3>
+                   <p>Smouha,Alexandria,Egypt</p>
+                 </div>
+               </div>
+               <div class="box">
+                 <div class="icon"> <img src="phone.png" alt="address" id="addressIMG"></div>
+                 <div class="text">
+                   <h3>phone</h3>
+                   <p>01272049692</p>
+                 </div>
+               </div>
+               <div class="box"> 
+                 <div class="icon"><img src="email.png" alt="address" id="addressIMG">
+                 </div>
+                 <div class="text">
+                   <h3>Email</h3>
+                   <p>eriswebsend@gmail.com</p>
+                 </div>
+               </div>
+             </div>
+             <div class="contactForm">
+               <form action="/send_email" method="post">
+                 <h2>Send Message</h2>
+                 <div class="inputBox">
+                   <input type="text" name="subject" required="required" id="subject">
+                   <span>Full Name</span>
+                 </div>
+                 <div class="inputBox">
+                   <input type="email" name="from" required="required" id="from">
+                   <span>Your Email</span>
+                 </div>
+                 <div class="inputBox">
+                   <textarea id="message" name="message" required="required"></textarea>
+                   <span>Type your message...</span>
+                 </div>
+                 <div class="inputBox">
+                   <input type="submit" name="" value="Send">
+                 </div>
+               </form>
+             </div>      
+         </div>
+       </section>
+       <script src="contact.js"></script>
+ </body>
+      <script src="/js/contact.js"></script>
+<%- include('../includes/footer.ejs') %>
+

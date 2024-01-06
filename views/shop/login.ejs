@@ -1,0 +1,44 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/login.css">
+</head>
+<%- include('../includes/navigation.ejs') %>
+<%- include('../includes/side-menu.ejs') %>
+    <!-- ABOVE IS THE SIDE MENU -->
+    <div class="content">
+        <section id="login">
+            <div class="form_box">
+                <div class="form_value">
+                    <form action="/log_in" method="POST">
+                        <h2>Login</h2>
+                        <div class="input_box">
+    
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input placeholder="Email" name="email" type="email" class="input-text" id="email" required><br>
+                            <label class="label-helper" for="">Email</label><br>
+                        </div>
+                        <div class="input_box">
+                            
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input placeholder="Password" name="password" type="password" class="input-text" id="password" required><br>
+                            <label class="label-helper" for="">Password</label><br>
+                        </div>
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password</a>
+                        </div>
+                        <button type="submit">Log in</button>
+                        <div class="register">
+                            <p> Don't have an account? <a href="signup.html">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+    </div>
+    
+
+    <%- include('../includes/footer.ejs') %>

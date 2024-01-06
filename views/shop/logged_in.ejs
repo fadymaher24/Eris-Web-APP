@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eris studios</title>
+    
+</head>
+<body>
+
+    <header>
+        <nav class="header-content">
+          <img src="logo.jpg" alt="Eris" class="header-logo">
+          <h1 class="comp-name">Eris Studios</h1>
+          <ul>
+            <div id="navbar-links" style="margin-top: 4px">
+              <li class="header-link"><a id="header-link" href="Rigester">Account</li>
+              <li class="header-link"><a id="header-link" href="https://www.facebook.com/">Games</li>
+              <li class="header-link"><a id="header-link" href="https://www.facebook.com/">Shop</li>
+              <li class="header-link"><a id="header-link-contact">Contact</li>
+            </div>
+            <div>
+            <img src="menu.png" class="menu-icon" id="menu-icon" style="display: none;">
+          </div>
+          </ul>
+          </nav>
+      </header>
+
+      <!-- HERE'S THE SIDE MENU -->
+
+      <div class="side-menu">
+        <a href="https://www.facebook.com/" style="font-family: sans-serif; font-weight: bold;  font-size: larger; background-color: #ff00006b;">Sign-in</a>
+        <a href="https://www.facebook.com/">Games</a>
+        <a href="https://www.youtube.com/">Shop</a>
+        <a href="https://www.youtube.com/">Contact</a>
+      </div>
+
+      <!-- ABOVE IS THE SIDE MENU -->
+      <div class="content">
+        
+      </div>
+      
+
+      <footer>
+        <a href="https://discord.gg/FDjuRHtZG8" target="_blank" style="text-decoration: none;">
+        <h3 id="dis-link">Join our discord server</h3>
+      </a>
+
+        <a href="https://discord.gg/FDjuRHtZG8" target="_blank">
+          <img src="discord.png" alt="discord" id="discordIMG">
+        </a>
+
+      </footer>
+      
+
+</body>
+</html>
+<style>
+
+
+  .content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  color: #e9f8ff;
+  }
+  
+  
+  
+  .content h1{
+    margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+  height: min-content;
+  font-size: 50px;
+  color: rgb(214, 182, 0);
+  margin-top: 45px;
+  
+  }
+  .content p{
+    margin-left: 10%;
+    margin-right: 10%;
+  color: #fffce8;
+  }
+    p{
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-bottom: 45px;
+    }
+    /*
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  */
+  
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #2c2c2c) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+      
+    
+  }
+  
+  header {
+    width: 100%;
+    margin: 0;
+    grid-area: header;
+  
+  }
+   /* 
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  */
+  
+  .header-logo {
+    width:5vw;
+    height: 5vw;
+    padding-right: 0%;
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+  }
+  
+  .comp-name {
+    color: #ffffffe0;
+    /* -webkit-user-select: none; */
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 20px;
+    white-space: nowrap;
+    margin-top: 0px;
+    height: max-content;
+  }
+  
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+    filter: brightness(130%);
+    cursor:pointer;
+    transition: all 0.5s ease;
+    float: right;
+    margin-top: 4px;
+  
+  }
+  
+  .menu-icon:hover{
+    transition: all 0.5s ease  ;
+    filter: brightness(170%);
+  }
+  
+  .side-menu {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #333;
+    transition: right 0.5s;
+    z-index: 999; /* add a higher z-index value */
+  }
+  
+  .side-menu a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .side-menu a:hover{
+    color: rgb(0, 230, 161);
+  }
+  
+  nav{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+  }
+  
+  nav ul{
+    flex: 1;
+    text-align: right;
+    font-size:20px ;
+    color: rgb(238, 238, 238);
+    margin-left: auto;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+    cursor:pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+    #header-link{
+      text-decoration: none;
+      color: rgb(238, 238, 238);
+    }
+    #header-link-contact{
+      text-decoration: none;
+      color: rgb(238, 238, 238);
+    }
+  .header-link ::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.4px;
+    bottom: 0;
+    left: 0;
+    background-color: #e9f8ff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .header-link :hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  
+  #sign-in{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: rgb(184, 228, 140);
+    padding-top:0px;
+    transition: all 0.15s ease;
+  
+  
+  }
+  #sign-in:hover{
+    transition: all 0.25s ease  ;
+    filter: brightness(140%);
+  }
+  
+  footer {
+          text-align: center;
+          padding: 3px;
+          background-color: rgba(255, 60, 0, 0.116);
+          color: white;
+          justify-content: center;
+          margin-top: auto;
+          align-items: center;
+          display: flex;
+          -ms-flex-align: end;
+          width: 100%;
+          height: 60px;
+          box-sizing: border-box;
+      }
+  
+  #dis-link{
+    margin-right: 10px;
+    color: white; 
+  }
+  #dis-link:hover{
+    text-decoration:underline;
+  }
+  
+  
+  #discordIMG{
+    width: 50px;
+    margin-left: 10px;
+    cursor:pointer
+  }
+  #discordIMG:hover{
+    opacity: 80%;
+  }
+  
+  </style>
+  
+  
+  <script>
+    
+    function navbar(event) {
+        var navbarLinks = document.getElementById('navbar-links');
+        var menuIcon = document.getElementById('menu-icon');
+        if (window.innerWidth > 768) {
+            navbarLinks.style.display = 'block';
+            menuIcon.style.display = 'none';
+            navbarLinks.style.opacity = '0';
+            navbarLinks.style.transition = 'opacity 0.3s ease-in-out';
+            
+            
+            var contact = document.getElementById('header-link-contact');
+            contact.addEventListener('click',function () {
+              window.location.href = "https://www.facebook.com";
+            });
+          
+  
+            setTimeout(function () {
+                navbarLinks.style.opacity = '1';
+            }, 0);
+        } else {
+            navbarLinks.style.opacity = '0';
+            navbarLinks.style.transition = 'opacity 0.3s ease-in-out';
+            setTimeout(function () {
+                navbarLinks.style.display = 'none';
+                menuIcon.style.display = 'block';
+            }, 300);
+  
+        }
+    }
+  
+    window.addEventListener('resize', navbar);
+    window.addEventListener('load', navbar);
+  
+    var menuIcon = document.getElementById("menu-icon");
+    var sideMenu = document.querySelector(".side-menu");
+    
+    sideMenu.style.right = "-250px";
+  
+    menuIcon.addEventListener("click", function () {
+        sideMenu.style.right = "0";
+    });
+  
+    document.addEventListener("click", function (event) {
+        var isClickInsideMenu = sideMenu.contains(event.target);
+        var isClickOnMenuIcon = (event.target === menuIcon);
+  
+        if (!isClickInsideMenu && !isClickOnMenuIcon) {
+            sideMenu.style.right = "-250px";
+        }
+    });
+  
+  </script>

@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.0",
+    "nodemailer": "^6.9.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "eris",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "nodemon app.js"
+  },
+  "author": "Fady Maher",
+  "license": "ISC",
+  "description": ""
+}

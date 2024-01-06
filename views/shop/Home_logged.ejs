@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eris studios</title>
+    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <nav class="header-content">
+      <img src="../logo.jpg" alt="Eris" class="header-logo">
+      <h1 class="comp-name">Eris Studios</h1>
+      <ul>
+        <div id="navbar-links" style="margin-top: 4px">
+          <li class="header-link"><a id="header-link" href="../account/account.html">Account</li>
+          <li class="header-link"><a id="header-link" href="../games/Games.html">Games</li>
+          <li class="header-link"><a id="header-link" href="../login-reg/login.html">Shop</li>
+          <li class="header-link"><a id="header-link-contact">Contact</li>
+        </div>
+        <div>
+        <img src="../menu.png" class="menu-icon" id="menu-icon" style="display: none;">
+      </div>
+      </ul>
+      </nav>
+  </header>
+  
+  <!-- HERE'S THE SIDE MENU -->
+  
+  <div class="side-menu">
+    <a href="../account/account.html">Account</a>
+    <a href="../games/Games.html">Games</a>
+    <a href="../login-reg/login.html">Shop</a>
+    <a href="../Contact_page/contact.html">Contact</a>
+  </div>
+
+      <!-- ABOVE IS THE SIDE MENU -->
+      <div class="content">
+        <!-- This is the first block-->
+        <div id="block1">
+       
+        <h1>Upcoming<br>Game Studio</h1>
+        <p>"Innovative indie game studio based in Egypt, crafting captivating and immersive games with a unique creative approach."</p>
+      
+      </div>
+        <!-- This is the second block-->
+        <div  id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+          
+          <img class="image" src="https://www.androidauthority.com/wp-content/uploads/2023/01/Sky-Children-of-Light-best-Android-games.jpg" draggable="false">
+          <img class="image" src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/03/best-open-world-games-2022.jpg" draggable="false">
+          <img class="image" src="https://i.ytimg.com/vi/en3N3DeLsrY/maxresdefault.jpg" draggable="false">
+          <img class="image" src="https://cdn.mos.cms.futurecdn.net/84CvByk739yh2zzP6bZZm8.jpg" draggable="false">
+          <img class="image" src="https://i.ytimg.com/vi/N1Z7lAaBHWU/maxresdefault.jpg" draggable="false">
+          <img class="image" src="https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/7141393_High%20Graphics%20PC%20Games%202021.jpg" draggable="false">
+          <img class="image" src="https://gameranx.com/wp-content/uploads/2021/01/ghost.jpg" draggable="false">
+          <img class="image" src="zahi1.png" draggable="false">
+          
+        </div>
+        <!-- This is the third block-->
+        <div data-aos="flip-down" id="block2">
+          <h1>Mission and values</h1>
+          <p>"At our indie game studio, we're committed to creating unique and memorable experiences that push the boundaries of what's possible in gaming. Our team is made up of passionate developers who share a love of games and a dedication to excellence."</p>
+        </div>
+        <!-- This is the fourth block-->
+        <div data-aos="fade-right" id="block3">
+          <h1>Our Games</h1>
+          <p>"We are currently developing an action adventure game <br>"A'ARU The Serpent of Chaos"</p>
+        </div>
+      </div>
+
+      
+      <script src="homescripts.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+        </script>
+        <%- include('../includes/footer.ejs') %>
